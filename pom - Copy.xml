@@ -8,22 +8,8 @@
     <plugins>
       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>
+		<mainClass>SolunaLauncher.Bootstrap</mainClass>
         <version>3.1</version>
-		<executions>
-          <execution>
-            <phase>package</phase>
-            <goals>
-              <goal>shade</goal>
-            </goals>
-            <configuration>
-              <transformers>
-                <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-                  <mainClass>SolunaLauncher.Bootstrap</mainClass>
-                </transformer>
-              </transformers>
-            </configuration>
-          </execution>
-        </executions>
         <configuration>
           <source>1.7</source>
           <target>1.7</target>
